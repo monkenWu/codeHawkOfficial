@@ -1,7 +1,7 @@
 <section id="<?=$id?>" class="pb-0 ts-block text-center ts-overflow__hidden ts-shape-mask__down" data-bg-color="#ededed" data-bg-image="assets/img/bg-shapes-02.png" data-bg-repeat="no-repeat" data-bg-position="bottom" data-bg-size="inherit">
     <div class="container">
         <div class="ts-title">
-            <h2>印象標語</h2>
+            <h2><?=$lan["title"]?></h2>
         </div>
         <!--end ts-title-->
 

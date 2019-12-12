@@ -13,21 +13,24 @@
     <?= view('basic/jsLoad') ?>
     <?= view('basic/basicViewFunctions') ?>
 
-	<title><?= $webTitle ?></title>
+	<title><?= $language["basic"]["webTitle"] ?></title>
 </head>
 <body data-spy="scroll" data-target=".navbar" class="has-loading-screen" data-bg-parallax="scroll" data-bg-parallax-speed="3">
     <div class="ts-page-wrapper" id="page-top">
-        <?= view("basic/header") ?>
+        <?= view("basic/header",["lan"  => $language["basic"]]) ?>
         <main id="ts-content">
             <?php
                 if($component){
                     foreach ($component as $key => $data) {
-                        echo view("{$viewName}/{$data['componentName']}",["id"=>$data['componentName']]);
+                        echo view("{$viewName}/{$data['componentName']}",[
+                            "id"   => $data['componentName'],
+                            "lan"  => $language[$data['componentName']]
+                        ]);
                     }
                 }
             ?>
         </main>
-        <?= view("basic/footer") ?>
+        <?= view("basic/footer",["lan"  => $language["basic"]]) ?>
     </div>
     <!--end page-->
     <script>

@@ -1,9 +1,9 @@
 <div class="container align-self-center">
     <div class="row align-items-center">
         <div class="col-sm-7">
-            <h3>小標語。</h3>
-            <h1>介紹介紹介紹介紹介紹</h1>
-            <a href="#brief" class="btn btn-light btn-lg ts-scroll">了解更多</a>
+            <h3><?=$lan["headerTitle"]?></h3>
+            <h1><?=$lan["headerMain"]?></h1>
+            <a href="#brief" class="btn btn-light btn-lg ts-scroll"><?=$lan["headerBtn"]?></a>
         </div>
         <!--end col-sm-7 col-md-7-->
         <div class="col-sm-5 d-none d-sm-block">

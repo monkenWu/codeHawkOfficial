@@ -14,8 +14,11 @@
                 <?php
                     if($component){
                         foreach ($component as $key => $data) {
-                            if($data['navName']){
-                                echo "<a class='nav-item nav-link ts-scroll' href='#{$data['componentName']}'>{$data['navName']}</a>";
+                            //print_r($data);
+                            if($data['haveNav']){
+                                $name = $data['componentName'];
+                                $text = $language[$name]['navName'];
+                                echo "<a class='nav-item nav-link ts-scroll' href='#{$name}'>{$text}</a>";
                             }
                         }
                     }

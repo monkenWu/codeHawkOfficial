@@ -3,7 +3,7 @@
         <div class="container">
                 <!--end ts-box-->
                 <div class="text-center text-white py-4">
-                        <small>© 2019 </small>
+                        <small><?=$lan["footerMain"]?></small>
                 </div>
         </div>
         <!--end container-->

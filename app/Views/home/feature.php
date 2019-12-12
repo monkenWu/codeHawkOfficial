@@ -14,47 +14,23 @@
             <!--end col-xl-7-->
             <div class="col-md-5 col-xl-5" data-animate="ts-fadeInUp" data-offset="100">
                 <div class="ts-title">
-                    <h2>產品特色</h2>
+                    <h2><?=$lan["title"]?></h2>
                 </div>
                 <!--end ts-title-->
-                <p>
-                    特色簡介特色簡介，特色簡介特色簡介，特色簡介特色簡介，特色簡介特色簡介，特色簡介特色簡介。
-                </p>
+                <p><?=$lan["intro"]?></p>
                 <!--features list-->
                 <ul class="list-unstyled ts-list-divided">
-                    <li>
-                        <a href="#feature-1" class="ts-font-color__black" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="feature-1">
-                            <h6 class="my-2">特色1</h6>
-                        </a>
-                        <div class="collapse" id="feature-1">
-                            <p>
-                                詳細介紹詳細介紹詳細介紹，詳細介紹詳細介紹！詳細介紹詳細介紹詳細介紹。
-                            </p>
-                        </div>
-                        <!--end collapse-->
-                    </li>
-                    <li>
-                        <a href="#feature-2" class="ts-font-color__black" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="feature-2">
-                            <h6 class="my-2">特色2</h6>
-                        </a>
-                        <div class="collapse" id="feature-2">
-                            <p>
-                                詳細介紹詳細介紹詳細介紹，詳細介紹詳細介紹！詳細介紹詳細介紹詳細介紹。
-                            </p>
-                        </div>
-                        <!--end collapse-->
-                    </li>
-                    <li>
-                        <a href="#feature-3" class="ts-font-color__black" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="feature-3">
-                            <h6 class="my-2">特色3</h6>
-                        </a>
-                        <div class="collapse" id="feature-3">
-                            <p>
-                            詳細介紹詳細介紹詳細介紹，詳細介紹詳細介紹！詳細介紹詳細介紹詳細介紹。
-                            </p>
-                        </div>
-                        <!--end collapse-->
-                    </li>
+                    <?php foreach ($lan["collapse"] as $key => $value): ?>
+                        <li>
+                            <a href="#feature-<?=$key?>" class="ts-font-color__black" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="feature-<?=$key?>">
+                                <h6 class="my-2"><?=$value["title"]?></h6>
+                            </a>
+                            <div class="collapse" id="feature-<?=$key?>">
+                                <p><?=$value["content"]?></p>
+                            </div>
+                            <!--end collapse-->
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
                 <!--end features list-->
             </div>

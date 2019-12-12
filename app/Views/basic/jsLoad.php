@@ -9,5 +9,9 @@
 <script src="assets/js/jquery.validate.min.js"></script>
 <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+<script src="assets/dataTables/datatables.min.js"></script>
+<script src="assets/dataTables/DataTables-1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script src="assets/dataTables/Responsive-2.2.3/js/responsive.bootstrap4.min.js"></script>
 <script src="assets/js/jquery.wavify.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
